@@ -6,7 +6,7 @@ function Header() {
       <div className="header-content">
         <div className="header-title">
           <img 
-            src="/division2-logo.png" 
+            src="/division2-build-calculator/division2-logo.png" 
             alt="Division 2 Logo" 
             className="header-logo"
           />
