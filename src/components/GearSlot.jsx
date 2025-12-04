@@ -1,6 +1,6 @@
 import './GearSlot.css'
 
-function GearSlot({ slotId, label, gear, onChange }) {
+function GearSlot({ slotName, gear }) {
   return (
     <div className="gear-slot">
       <div className="gear-slot-header">

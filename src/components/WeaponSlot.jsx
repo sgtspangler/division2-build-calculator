@@ -1,6 +1,6 @@
 import './WeaponSlot.css'
 
-function WeaponSlot({ slotId, label, weapon, onChange }) {
+function WeaponSlot({ slotName, weapon }) {
   return (
     <div className="weapon-slot">
       <div className="weapon-slot-header">

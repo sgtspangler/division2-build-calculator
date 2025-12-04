@@ -2,17 +2,10 @@ import { useState } from 'react'
 import './SkillsPanel.css'
 
 function SkillsPanel() {
-  const [skills, setSkills] = useState({
+  const [skills] = useState({
     skill1: null,
     skill2: null
   })
-
-  const handleSkillChange = (slotId, skillData) => {
-    setSkills(prev => ({
-      ...prev,
-      [slotId]: skillData
-    }))
-  }
 
   return (
     <div className="skills-panel">
