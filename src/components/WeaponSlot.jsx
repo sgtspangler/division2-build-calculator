@@ -4,7 +4,7 @@ function WeaponSlot({ slotName, weapon }) {
   return (
     <div className="weapon-slot">
       <div className="weapon-slot-header">
-        <span className="weapon-slot-label">{label}</span>
+        <span className="weapon-slot-label">{slotName}</span>
       </div>
       <div className="weapon-slot-content">
         {weapon ? (

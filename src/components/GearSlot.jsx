@@ -3,8 +3,8 @@ import './GearSlot.css'
 function GearSlot({ slotName, gear }) {
   return (
     <div className="gear-slot">
-      <div className="gear-slot-header">
-        <span className="gear-slot-label">{label}</span>
+      <div className="slot-header">
+        <span className="slot-label">{slotName}</span>
       </div>
       <div className="gear-slot-content">
         {gear ? (
