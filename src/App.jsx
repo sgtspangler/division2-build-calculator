@@ -1,17 +1,32 @@
 import './App.css'
+import Header from './components/Header'
+import SpecializationPanel from './components/SpecializationPanel'
+import SHDWatchPanel from './components/SHDWatchPanel'
+import ControlsPanel from './components/ControlsPanel'
+import WeaponsPanel from './components/WeaponsPanel'
+import GearPanel from './components/GearPanel'
+import SkillsPanel from './components/SkillsPanel'
+import StatsPanel from './components/StatsPanel'
 
 function App() {
   return (
     <div className="app">
-      <header className="app-header">
-        <h1>Division 2 Build Calculator</h1>
-        <p className="subtitle">by Sgt.Spangler</p>
-      </header>
+      <Header />
       <main className="app-main">
-        <div className="status-message">
-          <h2>Phase 0 Complete! 🎉</h2>
-          <p>Project setup and foundation ready.</p>
-          <p>Ready to start building Phase 1: Core UI Structure</p>
+        <div className="top-section">
+          <SpecializationPanel />
+          <SHDWatchPanel />
+          <ControlsPanel />
+        </div>
+        <div className="content-layout">
+          <div className="left-column">
+            <WeaponsPanel />
+            <GearPanel />
+            <SkillsPanel />
+          </div>
+          <div className="right-column">
+            <StatsPanel />
+          </div>
         </div>
       </main>
     </div>

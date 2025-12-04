@@ -4,30 +4,55 @@
   min-height: 100vh;
 }
 
-.app-header {
-  background-color: var(--color-surface);
-  border-bottom: 2px solid var(--color-primary);
-  padding: 1.5rem 2rem;
-  text-align: center;
-}
-
-.app-header h1 {
-  font-size: 2.5rem;
-  color: var(--color-primary);
-  margin-bottom: 0.5rem;
-}
-
-.subtitle {
-  color: var(--color-text-secondary);
-  font-size: 1.1rem;
-}
-
 .app-main {
   flex: 1;
   padding: 2rem;
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
+}
+
+.top-section {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.content-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .content-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .right-column {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-section {
+    flex-direction: column;
+  }
 }
 
 .status-message {

@@ -1,0 +1,106 @@
+.gear-slot {
+  background-color: var(--color-background);
+  border: 2px solid var(--color-border);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+.gear-slot:hover {
+  border-color: var(--color-primary);
+}
+
+.gear-slot-header {
+  background-color: rgba(255, 107, 0, 0.1);
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.gear-slot-label {
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.gear-slot-content {
+  padding: 1rem;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Empty slot styling */
+.gear-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.gear-empty:hover {
+  color: var(--color-primary);
+  transform: scale(1.05);
+}
+
+.gear-empty-icon {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.gear-empty-text {
+  font-size: 0.9rem;
+}
+
+/* Gear item styling */
+.gear-item {
+  width: 100%;
+  text-align: left;
+}
+
+.gear-item-name {
+  color: var(--color-text);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.gear-item-brand {
+  color: var(--color-secondary);
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.gear-item-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.gear-stat {
+  color: var(--color-text-secondary);
+  font-size: 0.85rem;
+  padding: 0.25rem 0.5rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+}
+
+.gear-stat.core {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.gear-talent {
+  color: var(--color-secondary);
+  font-size: 0.85rem;
+  padding: 0.5rem;
+  background-color: rgba(0, 168, 255, 0.1);
+  border-radius: 3px;
+  margin-top: 0.5rem;
+  font-style: italic;
+}

@@ -40,40 +40,39 @@
   - ESLint passing with no errors
 
 ### Phase 1: Core UI Structure
-- [ ] **Header Component**
+- [x] **Header Component**
   - Project title and branding
   - Navigation (if needed)
   
-- [ ] **Gear Panel Component**
+- [x] **Gear Panel Component**
   - 6 gear slots: Mask, Backpack, Chest, Gloves, Holster, Kneepads
   - Each slot shows: item name, brand, core attribute, attributes, talent, mod slots
   - Dropdown/select for choosing gear items
   
-- [ ] **Weapons Panel Component**
+- [x] **Weapons Panel Component**
   - 3 weapon slots: Primary, Secondary, Sidearm
   - Each shows: weapon name, type, damage, talents, mods
   - Dropdown/select for choosing weapons
   
-- [ ] **Skills Panel Component**
+- [x] **Skills Panel Component**
   - 2 skill slots
   - Skill variant selection
-  - Specialization selection
+  - Specialization selection (moved to separate modal component)
   
-- [ ] **Stats Panel Component**
+- [x] **Stats Panel Component**
   - Build statistics display
   - Offensive stats: Weapon Damage, Crit Chance, Crit Damage, Headshot Damage
   - Defensive stats: Armor, Health, Hazard Protection
   - Utility stats: Skill Damage, Skill Haste, Skill Repair, Skill Duration
   - DPS calculations (if applicable)
 
-- [ ] **Controls Panel Component**
-  - Save Build button
-  - Load Build button
-  - Clear Build button
-  - Export Build button
-  - Share Build button (copy URL)
+- [x] **Controls Panel Component**
+  - Save & Share button
+  - Screenshot button
+  - Clear & New Build button
+  - Report an Issue button
 
-- [ ] **SHD Watch Panel Component**
+- [x] **SHD Watch Panel Component**
   - 16 SHD stats with level inputs
   - Categories: Offensive (red), Defensive (blue), Utility (yellow), Handling (white)
   - 12 stats with max 10 levels
@@ -81,6 +80,7 @@
   - Total counter (max 200)
   - Set All to Max button
   - Reset All button
+  - Converted to modal popup for compact display
 
 ### Phase 2: Game Data
 - [ ] **Gear Data Structure**
@@ -262,6 +262,23 @@
   - Add JSDoc comments
   - Fix all ESLint errors
   - Optimize performance (memoization, lazy loading)
+
+---
+
+## 📝 Backlog Items
+
+### UI/UX Improvements
+- [ ] Find better placement for Control Panel buttons (currently in top section)
+- [ ] Make Stats Panel more comprehensive with additional metrics
+  - Add more detailed breakdowns per stat category
+  - Include skill tier display
+  - Show effective stats with all bonuses applied
+  - Add tooltips explaining stat calculations
+
+### Future Enhancements
+- [ ] Add collapse/expand functionality to panels
+- [ ] Implement drag-and-drop for gear slots
+- [ ] Add quick-select presets for common stat priorities
 
 ---
 
